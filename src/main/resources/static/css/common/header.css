@@ -1,0 +1,6 @@
+/*header*/
+.header{
+    background-color: #ffff00;
+    display: flex;
+    justify-content: center;
+}

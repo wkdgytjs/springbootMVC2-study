@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${title}">thymeleafIndex</title>
+    <link rel="stylesheet" th:href="@{/css/thymeleafIndex.css}">
+</head>
+<body>
+<div th:replace="/thymeleaf/fragments/header :: headerFragment">headerFragment</div>
+<div class="container">container</div>
+<div th:replace="/thymeleaf/fragments/footer :: footerFragment">footerFragment</div>
+</body>
+</html>

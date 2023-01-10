@@ -1,0 +1,12 @@
+#server ??
+server.port= 8099
+
+#thymeleaf ??
+spring.thymeleaf.prefix=class:/templates/
+spring.thymeleaf.suffix=.html
+spring.thymeleaf.cache=false
+
+#mysql ??
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+spring.datasource.username=root
+spring.datasource.password=1234

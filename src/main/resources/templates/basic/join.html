@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>회원가입</title>
+</head>
+<body>
+<h1>회원가입페이지</h1>
+<!--<form action="" th:action="@{/basic/joinOk}" method="post">
+    name: <input type="text" name="userName" id="userName"> <br>
+    age: <input type="text" name="userAge" id="userAge"> <br>
+    <input type="submit" value="회원가입">
+</form>-->
+<br>
+
+<form action="" th:action="@{/basic/joinOk}" th:object="${memberDto}" method="post">
+    name: <input type="text" th:field="*{userName}"> <br>
+    age: <input type="text" th:field="*{userAge}"> <br>
+    <input type="submit" value="회원가입">
+</form>
+
+</body>
+</html>

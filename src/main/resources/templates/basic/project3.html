@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>project3</title>
+</head>
+<body>
+<div>
+    회원정보: <span th:text="${info}">info</span> <br>
+    이름: <span th:text="${info.userName}">info</span> <br>
+    나이: <span th:text="${info.userAge}">info</span> <br>
+    날짜: <span th:text="${info.date}">info</span>
+</div>
+<!--Map forEach-->
+<table border="1">
+    <tr>
+        <th>회원정보</th>
+        <th>이름</th>
+        <th>나이</th>
+        <th>날짜</th>
+    </tr>
+    <tr>
+        <td th:text="${info}">Onions</td>
+        <td th:text="${info.userName}">Onions</td>
+        <td th:text="${info.userAge}">2.41</td>
+        <td th:text="${info.date}">2.41</td>
+    </tr>
+</table>
+
+<!--forEach는 list에만 사용권장-->
+<table border="2">
+    <tr>
+        <th>선택과목</th>
+    </tr>
+    <tr th:each="item : ${project}">
+        <td th:text="${item}"></td>
+    </tr>
+</table>
+</body>
+</html>

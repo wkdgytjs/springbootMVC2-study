@@ -1,0 +1,17 @@
+#server 설정
+server:
+    port: 8099
+
+#thymeleaf 설정
+spring:
+    thymeleaf:
+    prefix: classpath:templates/
+    suffix: .html
+    cache: false
+
+#mysql 설정
+datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    datasource:
+    userName: root
+    password: 1234
